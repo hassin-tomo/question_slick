@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <title>*******</title>
+    <meta name="description" content="ページの紹介文">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">jQuery(function($){ jQuery(".slide-btn").click(function(){
+    jQuery($(this).parent().next(".slide-contents")).animate( {height: "toggle", opacity: "toggle"}, "nomal" );
+}); });
+    </script>
+
+    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.js">
+        $(document).ready(function(){
+            $('#recommended').slick({
+                slidesToShow:6,
+                slidesToScroll:1,
+                autoplay:true,
+                autoplaySpeed:2000,
+                //fade: true,
+                dots: true,
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="recommended" class="clearfix">
+        <div>
+            <img src="font/free.jpg" width="400" height="300">
+            <p class="R-text">
+            </p>
+        </div>
+        <div>
+            <img src="font/free.jpg" width="400" height="300">
+            <p class="R-text">
+            </p>
+        </div>
+        <div>
+            <img src="font/free.jpg" width="400" height="300">
+            <p class="R-text">
+            </p>
+        </div>
+        <div>
+            <img src="font/free.jpg" width="400" height="300">
+            <p class="R-text">
+            </p>
+        </div>
+        <div>
+            <img src="font/free.jpg" width="400" height="300">
+            <p class="R-text">
+            </p>
+        </div>
+        <div>
+            <img src="font/free.jpg" width="400" height="300">
+            <p class="R-text">
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
